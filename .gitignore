@@ -1,0 +1,197 @@
+# ============================================================
+# NEXALINK — .gitignore
+# ============================================================
+
+# ─── SECRETS & CREDENTIALS ───
+# NEVER commit real credentials to public repositories
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Local config overrides
+config.local.js
+config.prod.js
+supabase-key.txt
+google-oauth-secret.json
+
+# ─── NODE & PACKAGE MANAGERS ───
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+
+# ─── LOGS ───
+*.log
+*.logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ─── IDE & EDITOR FILES ───
+# Visual Studio Code
+.vscode/
+.vscode-insiders/
+*.code-workspace
+.history/
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+.idea_modules/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+.\#*
+\#*
+
+# Atom
+.atom/
+
+# ─── OS FILES ───
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── TEMPORARY FILES ───
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.~*
+
+# ─── BUILD & DIST ───
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# ─── TESTING ───
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+.mocha/
+
+# ─── BROWSER & CACHE ───
+.cache/
+.eslintcache
+.stylelintcache
+
+# ─── DEVELOPMENT ───
+# Local development database backups
+*.sql
+!schema.sql
+
+# Local development uploads/data
+uploads/
+temp/
+tmp/
+
+# ─── SYSTEM FILES ───
+.env.system
+system.config.js
+
+# ─── SENSITIVE DATA ───
+# Never commit API keys, tokens, or secrets
+*.key
+*.pem
+*.secret
+*.token
+secrets/
+private/
+
+# ─── DATABASE ───
+# Never commit local database files
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+data/
+
+# ─── CREDENTIALS ───
+# OAuth tokens and session data
+.session
+.sessions
+sessions/
+tokens/
+auth-cache/
+
+# ─── ANALYTICS & MONITORING ───
+# Sentry, Google Analytics, etc.
+analytics.local.js
+monitoring.local.js
+
+# ─── COMPILED OUTPUT ───
+*.o
+*.a
+*.so
+.lo
+*.la
+*.lai
+*.la
+*.lai
+
+# ─── DEPENDENCIES ───
+# Specific dependency exclusions
+node_modules/
+.pnpm-store/
+
+# ─── DEPLOYMENT ───
+# Deployment-specific files
+.vercel/
+.netlify/
+deploy/
+.firebase/
+
+# ─── DOCKER (if added later) ───
+.dockerignore
+docker-compose.override.yml
+
+# ─── DOCUMENTATION BUILD ───
+docs/_build/
+site/
+.sphinx/
+
+# ─── MISC ───
+# Files that should never be committed
+.todo
+.idea-notes.txt
+notes.md
+scratch.js
+debug.html
+test-data.json
+mock-response.json
+
+# Keep important files even if they match patterns above
+!.env.example
+!.env.sample
+!README.md
+!LICENSE
